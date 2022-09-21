@@ -1,0 +1,911 @@
+    1  echo "HELP I'M STUCK IN A FILE AND I CAN'T GET OUT!" > ~/static/test.txt
+    2  cd .ssh
+    3  ls -la
+    4  ssh-keygen -f id_rsa_gitlab
+    5  cat id_rsa_gitlab.pub
+    6  cd
+    7  git config --global user.name "Grant McKean"
+    8  git config --global user.email "gmckean@albridge.com"
+    9  git clone git@gitlab.com:gmckean@albridge.com/mycode.git
+   10  git clone git@gitlab.com:gmckean@albridge.com/mycode
+   11  git clone git@gitlab.com:gmckean@albridge.com/mycode.git
+   12  git clone git@gitlab.com:gmckean@albridge.com/albridge/mycode.git
+   13  git clone git@gitlab.com:gmckean@albridge.com/albridge/mycode
+   14  git clone git@gitlab.com:gmckean@albridge.com/mycode.git
+   15  sudo apt-get update
+   16  sudo apt-get install -y gnupg software-properties-common curl
+   17  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   18  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   19  terraform -help
+   20  sudo apt-get update && sudo apt-get install terraform
+   21  terraform -help
+   22  history
+   23  groups
+   24  mkdir -p ~/mycode/docker-tf/
+   25  pwd
+   26  cd ~/mycode/docker-tf
+   27  ls
+   28  vi main.cf
+   29  terraform init
+   30  ls -l
+   31  pwd
+   32  ls
+   33  mv main.cf main.tf
+   34  terraform init
+   35  terraform plan
+   36  terraform apply
+   37  docker ps
+   38  curl http://localhost:8000
+   39  mv main.tf main.tf.old
+   40  vi main.tf
+   41  terraform plan
+   42  terraform validate
+   43  terraform apply
+   44  docker ps
+   45  vi main.tf
+   46  terraform validate
+   47  cd ..
+   48  git status
+   49  history 
+   50  history|grep git'
+   51  history|grep git
+   52  cd
+   53  mv mycode/ mycode.old
+   54  git clone git@gitlab.com:gaffer-ghm/mycode.git
+   55  cd mycode
+   56  git status
+   57  mv ~/mycode.old/* .
+   58  git add *
+   59  git commit -m "push"
+   60  git push
+   61  history
+   62  ls
+   63  cd docker-tf/
+   64  ls
+   65  cd ..
+   66  pwd
+   67  ls
+   68  groups
+   69  cd
+   70  mkdir -p ~/mycode/vars-tf/
+   71  cd ~/mycode/vars-tf/
+   72  vim ~/mycode/vars-tf/main.tf
+   73  vim variables.tf
+   74  terraform init
+   75  terraform apply
+   76  docker ps
+   77  terraform apply -var "container_name=Valhalla"
+   78  docker ps
+   79  terraform destroy
+   80  terraform apply -var "container_name=Valhalla"
+   81  docker ps
+   82  terraform destroy
+   83  terraform init
+   84  terraform apply -var "container_name=Valhalla"
+   85  terraform destroy
+   86  docker ps
+   87  cd ..
+   88  ls
+   89  cd docker-tf/
+   90  ls
+   91  terraform destroy
+   92  cd ../vars-tf/
+   93  ls
+   94  docker ps
+   95  terraform init
+   96  terraform apply -var "container_name=Valhalla"
+   97  docker ps
+   98  vi main.tf 
+   99  vi variables.tf 
+  100  vi main.tf 
+  101  vi variables.tf 
+  102  vi main.tf 
+  103  terraform apply -var "container_name=Valhalla"
+  104  docker ps
+  105  terraform destroy
+  106  vi main.tf 
+  107  vi variables.tf 
+  108  vi main.tf 
+  109  terraform destroy
+  110  docker ps
+  111  terraform apply -var "container_name=Valhalla"
+  112  docker ps
+  113  terraform destroy
+  114  terraform apply -var "container_name=Valhalla" -var "internal_port=80" -var "external_port=2224"
+  115  docker ps
+  116  cd ~myc
+  117  cd ~mycdode
+  118  cd ~/mycode
+  119  ls
+  120  git status
+  121  git add /home/student/mycode/*
+  122  git status
+  123  git commit -m "terraform and variables"
+  124  git push origin
+  125  cd ~/
+  126  ls
+  127  ls -la
+  128  cd mycode
+  129  ls -la
+  130  docker ps
+  131  terrafom destroy
+  132  terraform destroy
+  133  docker ps
+  134  cd vars-tf/
+  135  ls
+  136  terraform destroy
+  137  groups
+  138  cd
+  139  mkdir -p ~/mycode/output-tf/
+  140  cd ~/mycode/output-tf/
+  141  vim ~/mycode/output-tf/main.tf
+  142  vim outputs.tf
+  143  terraform init
+  144  terraform apply
+  145  mkdir -p ~/mycode/output-tf/ls
+  146  ls
+  147  rm -r ls
+  148  pwd
+  149  terraform init
+  150  terraform apply
+  151  ls
+  152  vi *
+  153  vim variables.tf
+  154  terraform apply
+  155  terraform output
+  156  docker ps
+  157  docker image list
+  158  terraform show
+  159  vi outputs.tf 
+  160  terraform show
+  161  docker image list
+  162  vim variables.tf
+  163  vi outputs.tf 
+  164  terraform show
+  165  vi outputs.tf 
+  166  terraform show
+  167  terraform show|more
+  168  vi outputs.tf 
+  169  terraform show|more
+  170  vi outputs.tf 
+  171  terraform show|more
+  172  vi outputs.tf 
+  173  terraform show|more
+  174  terraform show
+  175  terraform apply
+  176  vi outputs.tf 
+  177  terraform apply
+  178  terraform show
+  179  terraform show|more
+  180  vi outputs.tf 
+  181  terraform show|more
+  182  terraform apply
+  183  vi outputs.tf 
+  184  terraform apply
+  185  terraform show|more
+  186  vi outputs.tf 
+  187  terraform apply
+  188  terraform destroy -auto-approve
+  189  cd ~/mycode
+  190  git 
+  191  git add /home/student/mycode/*
+  192  git status
+  193  git commit -m "docker output values"
+  194  git push origin
+  195  cd ~/mycode
+  196  mkdir -p ~/mycode/docker-challenge/
+  197  cd ~/mycode/docker-challenge/
+  198  docker ps
+  199  ls ..
+  200  ls ../vars-tf/
+  201  cp ../vars-tf/variables.tf .
+  202  vi variables.tf 
+  203  vi ../vars-tf/main.tf 
+  204  cp ../vars-tf/main.tf .
+  205  ls
+  206  vi main.tf 
+  207  terraform init
+  208  terraform providers
+  209  history |grep clone
+  210  ls
+  211  ls ..
+  212  vi main.tf 
+  213  ls ..
+  214  vi ../docker-tf/main.tf
+  215  vi main.tf 
+  216  terraform init
+  217  terraform apply
+  218  vi main.tf 
+  219  terraform apply
+  220  vi main.tf 
+  221  terraform apply
+  222  vi main.tf 
+  223  vi ../docker-tf/main.tf
+  224  vi ../vars-tf/main.tf 
+  225  vi main.tf 
+  226  terraform apply
+  227  vi main.tf 
+  228  terraform apply
+  229  vi main.tf 
+  230  terraform apply
+  231  vi main.tf 
+  232  terraform apply
+  233  curl http://0.0.0.0:5432/env
+  234  curl http://0.0.0.0:5432/health
+  235  curl http://0.0.0.0:5432/alta3
+  236  curl http://0.0.0.0:5432/talkingparrot?say=prettybird
+  237  cd ~/mycode
+  238  history |grep git
+  239  git status
+  240  git add *
+  241  git rm --cached docker-challenge/simpleflaskservice
+  242  git rm -f --cached docker-challenge/simpleflaskservice
+  243  git add *
+  244  cd docker-challenge/
+  245  ls
+  246  rm -r simpleflaskservice
+  247  unalias rm
+  248  rm -f simpleflaskservice
+  249  rm -rf simpleflaskservice
+  250  ls
+  251  cd ..
+  252  pwd
+  253  git add *
+  254  git status
+  255  git commit -m "docker challenge"
+  256  git push origin
+  257  groups
+  258  docker ps
+  259  sudo docker stop $(docker ps -aq) && sudo docker rm $(docker ps -aq)
+  260  docker ps
+  261  mkdir -p ~/git
+  262  cd git
+  263  pwd
+  264  ls
+  265  git clone https://github.com/alta3/terraform-the-alta3-way.git
+  266  ls
+  267  cd terraform-the-alta3-way/
+  268  ls
+  269  cd labs/
+  270  ls
+  271  fc -l
+  272  sudo apt-install figlet
+  273  sudo apt-get figlet
+  274  cd
+  275  git clone git@gitlab.com:gaffer-ghm/mycode.git
+  276  git clone git@gitlab.com:gaffer-ghm/albridge/mycode.git
+  277  cd
+  278  mkdir -p mycode/docker-tf
+  279  cd mycode/docker-tf/
+  280  ls
+  281  vi main.tfgroups
+  282  groups
+  283  sudo usermod -aG docker student
+  284  groups
+  285  su - $USER
+  286  su - student
+  287  groups
+  288  ls
+  289  mkdir -p ~/mycode/troubleshoot && cd ~/mycode/troubleshoot
+  290  wget https://raw.githubusercontent.com/csfeeser/terraform/main/scripts/main ~/mycode/troubleshoot/main -q
+  291  ls
+  292  ls -l
+  293  terraform init
+  294  mv main main.tf
+  295  terraform init
+  296  vi main.tf 
+  297  terraform init
+  298  vi main.tf 
+  299  ls ..
+  300  find .. -type f -name vars.tf -exec grep r_name {} \;
+  301  find .. -type f -print
+  302  find .. -type f -name variables.tf -exec grep r_name {} \;
+  303  find .. -type f -name variables.tf -exec grep r_name /dev/null {} \;
+  304  cp ../vars-tf/variables.tf .
+  305  ls
+  306  vi variables.tf 
+  307  terraform init
+  308  vi main.tf 
+  309  find .. -type f -name variables.tf -exec grep nginx /dev/null {} \;
+  310  find .. -type f -name *.tf -exec grep nginx /dev/null {} \;
+  311  find .. -type f -name "*.tf" -exec grep nginx /dev/null {} \;
+  312  vi ../docker-tf/main.tf
+  313  vi main.tf 
+  314  terraform init
+  315  terraform apply
+  316  vi main.tf 
+  317  find .. -type f -name "*.tf" -exec grep ID /dev/null {} \;
+  318  vi ../output-tf/outputs.tf:
+  319  ls ..
+  320  vi ../output-tf/outputs.tf
+  321  vi outputs.tf
+  322  terraform apply
+  323  vi outputs.tf
+  324  terraform apply
+  325  vi outputs.tf
+  326  terraform apply
+  327  vi outputs.tf
+  328  terraform apply
+  329  vi main.tf 
+  330  terraform apply
+  331  pocker ps
+  332  docker ps
+  333  terraform destroy
+  334  docker ps
+  335  groups
+  336  cd
+  337  mkdir -p ~/mycode/expressions-tf/
+  338  cd ~/mycode/expressions-tf/
+  339  vim ~/mycode/expressions-tf/main.tf
+  340  vim ~/mycode/expressions-tf/outputs.tf
+  341  vim ~/mycode/expressions-tf/versions.tf
+  342  vim ~/mycode/expressions-tf/outputs.tf
+  343  terraform init
+  344  terraform apply
+  345  curl $(terraform output -json nginx_hosts | jq -r '.[0].host')
+  346  mv main.tf main.old
+  347  vim main.tf
+  348  terraform apply
+  349  terraform show
+  350  terraform apply
+  351  terraform state list
+  352  terraform apply -replace "docker_container.nginx[2]"
+  353  docker ps
+  354  terraform destroy
+  355  docker ps
+  356  cd ..
+  357  pwd
+  358  history | grep git
+  359  git status
+  360  git add /home/student/mycode/*
+  361  git commit -m "expressions and errors"
+  362  git push origin
+  363  uuencode
+  364  sudo apt install sharutils
+  365  uuencode
+  366  du -sh .
+  367  terraform console
+  368  groups
+  369  mkdir -p ~/mycode/tfvars-tf/
+  370  vim ~/mycode/tfvars-tf/main.tf
+  371  cdtfv
+  372  cd tfvars-tf/
+  373  vim variables.tf
+  374  mkdir -p ~/mycode/tfvars-tf/aux1
+  375  vim aux1/terraform.tfvars
+  376  mkdir -p ~/mycode/tfvars-tf/aux2
+  377  vim aux2/terraform.tfvars
+  378  sudo apt install tree -y
+  379  tree
+  380  terraform apply -var-file="aux1/terraform.tfvars"
+  381  vim variables.tf
+  382  vim ~/mycode/tfvars-tf/main.tf
+  383  terraform init
+  384  terraform apply -var-file="aux1/terraform.tfvars"
+  385  docker ps
+  386  terraform apply -var-file="aux2/terraform.tfvars"
+  387  docker ps
+  388  terraform apply -var-file="aux2/terraform.tfvars"
+  389  docker ps
+  390  terraform apply -var-file="aux1/terraform.tfvars"
+  391  docker ps
+  392  terraform apply -var-file="aux2/terraform.tfvars"
+  393  docker ps
+  394  terraform apply -var "external_port=5666"
+  395  docker ps
+  396  mkdir aux3
+  397  ls
+  398  vi aux3/doctor.who
+  399  terraform apply -var-file="aux3/doctor.who""
+  400  terraform apply -var-file="aux3/doctor.who"
+  401  docker ps
+  402  terraform destroy --auto-approve
+  403  docker ps
+  404  vim ~/mycode/.gitignore
+  405  cd ..
+  406  mkdir bin
+  407  cd bin
+  408  vi deliver_to_git
+  409  chmod 700 deliver_to_git 
+  410  deliver_to_git
+  411  PATH=${HOME}/bin:$PATH
+  412  export PATH
+  413  deliver_to_git
+  414  vi deliver_to_git
+  415  deliver_to_git
+  416  vi deliver_to_git
+  417  deliver_to_git "intro to tfvars"
+  418  cd ../mycode
+  419  git status
+  420  cat ../bin/deliver_to_git 
+  421  mkdir -p ~/mycode/http-tf/
+  422  cd http-tf/
+  423  vim provider.tf
+  424  vim main.tf
+  425  vim ~/mycode/http-tf/outputs.tf
+  426  terraform init
+  427  terraform apply
+  428  terraform output
+  429  ls
+  430  vi *
+  431  mv main.tf main.tf.old
+  432  cp main.tf.old main.tf
+  433  vi main.tf
+  434  terraform apply
+  435  vi main.tf
+  436  terraform apply
+  437  vi main.tf
+  438  terraform apply
+  439  vi main.tf
+  440  terraform apply
+  441  vi main.tf
+  442  terraform apply
+  443  terraform output
+  444  vi main.tf
+  445  terraform apply
+  446  terraform output
+  447  terraform destroy -auto-approve
+  448  deliver_to_git "send HTTP GET with terraform"
+  449  cd ..
+  450  groups
+  451  mkdir -p ~/mycode/null-loops/
+  452  cd ~/mycode/null-loops/
+  453  ls
+  454  vim ~/mycode/null-loops/main.tf
+  455  terraform init
+  456  terraform fmt
+  457  terraform validate
+  458  terraform apply
+  459  mv main.tf main.tf.old
+  460  vim main.tf
+  461  terraform apply
+  462  terraform init
+  463  terraform apply
+  464  terraform apply|more
+  465  terraform apply
+  466  vi main.tf
+  467  terraform destroy
+  468  deliver_to_git "terraform null resource loops"
+  469  vi  ~/bin/deliver_to_git 
+  470  deliver_to_git "terraform null resource loops"
+  471  vi  ~/bin/deliver_to_git 
+  472  deliver_to_git "terraform null resource loops"
+  473  vi main.tf
+  474  ls
+  475  cp main.tf main.2
+  476  vi main.tf
+  477  terraform init
+  478  terraform apply
+  479  vi main.tf
+  480  terraform apply
+  481  terraform init
+  482  terraform apply
+  483  vi main.tf
+  484  terraform apply
+  485  vi main.tf
+  486  terraform apply
+  487  vi main.tf
+  488  terraform apply
+  489  vi main.tf
+  490  terraform apply
+  491  vi main.tf
+  492  terraform apply
+  493  vi main.tf
+  494  terraform apply
+  495  vi main.tf
+  496  terraform apply
+  497  cd ..
+  498  mkdir -p ~/mycode/localprov/
+  499  cd ~/mycode/localprov/
+  500  deliver_to_git "terraform null resource loops"
+  501  vim ~/mycode/localprov/main.tf
+  502  vim ~/mycode/localprov/variables.tf
+  503  terraform init
+  504  terraform apply -var 'owner=rzfeeser' -auto-approve
+  505  cat file.txt 
+  506  mkdir ~/mycode/localprov-write/
+  507  cd ../localprov-write/
+  508  ls
+  509  vim ~/mycode/localprov-write/main.tf
+  510  vim ~/mycode/localprov-write/password.tf
+  511  vim ~/mycode/localprov-write/provider.tf
+  512  terraform init
+  513  terraform apply -auto-approve
+  514  cat results.yml 
+  515  terraform destroy -auto-approve
+  516  ls
+  517  cd ..
+  518  cd localprov
+  519  ls
+  520  cp main.tf main.tf.old
+  521  vi main.tf
+  522  vi *
+  523  vi file.txt 
+  524  terraform apply -var 'owner=GHM' -auto-approve
+  525  ls -l
+  526  ls
+  527  vi *
+  528  terraform init
+  529  terraform apply -var 'owner=GHM' -auto-approve
+  530  ls
+  531  vi main.tf
+  532  vi *tf
+  533  terraform apply -var 'owner=GHM' -auto-approve
+  534  vi main.cf
+  535  ls
+  536  vi main.tf
+  537  terraform init
+  538  terraform apply -var 'owner=GHM' -auto-approve
+  539  cat file2
+  540  deliver_to_git "local-exec"
+  541  mkdir -p ~/mycode/delay-sleep/
+  542  cd ../delay-sleep/
+  543  vim ~/mycode/delay-sleep/main.tf
+  544  terraform init
+  545  terraform apply -auto-approve
+  546  vi main.tf 
+  547  terraform apply -auto-approve
+  548  vi ../localprov/main.tf
+  549  vi main.tf 
+  550  vi ../localprov/variables.tf 
+  551  cp ../localprov/variables.tf .
+  552  ls -l
+  553  terraform apply -var "owner=GHM" -auto-approve
+  554  ls -l
+  555  cat file2.txt 
+  556  deliver_to_git "creating a delay"
+  557  history |grep echo
+  558  cd ..
+  559  history > history.day2.txt
+  565  deliver_to_git "creating a delay"
+  566  history |grep echo
+  567  cd ..
+  568  history > history.day2.txt
+  569  vi history.day2.txt 
+  570  deliver_to_git "creating a delay"
+  571  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  572  az login
+  573  vi ../details
+  574  az account set --subscription ""
+  575  az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/xxx"
+  578  export ARM_CLIENT_ID=""
+  579  export ARM_CLIENT_SECRET=""
+  580  export ARM_SUBSCRIPTION_ID=""
+  581  export ARM_TENANT_ID=""
+  582  mkdir -p ~/mycode/azure-tf/
+  583  cd ~/mycode/azure-tf/
+  584  vim main.tf
+  585  terraform init
+  586  ls -la
+  587  tree .
+  588  tree
+  589  terraform fmt
+  590  terraform validate
+  591  terraform apply
+  592  vi main.tf `
+  593  vi main.tf 
+  594  terraform show state list
+  595  terraform state list
+  596  ls
+  597  vi terraform.tfstate 
+  598  terraform show
+  599  terraform state list
+  600  vim resource.tf
+  601  terraform plan
+  602  terraform apply
+  603  ls
+  604  ls ../..
+  605  ls
+  606  terraform destroy
+  607  deliver_to_git "terraform and Azure"
+  608  cd
+  609  cd .ssh
+  610  ls
+  611  cat id_rsa_gitlab.pub
+  612  ssh-keygen -f id_rsa_gitlab
+  613  cat id_rsa_gitlab.pub
+  614  cd../my
+  615  cd ../mycode
+  616  ls
+  617  deliver_to_git "terraform and Azure"
+  618  cd ../.ssh
+  619  ssh-keygen -f id_rsa_github
+  620  cp id_rsa_github.pub ~/static/githubkey.txt
+  621  cd ..
+  622  ls
+  623  cd mycode
+  624  ls
+  625  mkdir warmup3
+  626  cd warmup3/
+  627  ls ../null-loops/
+  628  vi ../null-loops/main.tf
+  629  vi main.tf
+  630  terraform init
+  631  terraform apply
+  632  ls
+  633  vi ../null-loops/main.tf
+  634  vi main.tf
+  635  ls ../null-loops/
+  636  vi ../null-loops/ma*
+  637  vi main.tf
+  638  terraform apply
+  639  vi main.tf
+  640  terraform a
+  641  vi main.tf
+  642  terraform apply
+  643  vi main.tf
+  644  terraform apply
+  645  vi main.tf
+  646  vi main2
+  647  vi main.tf
+  648  terraform apply
+  649  terraform init
+  650  terraform apply
+  651  vi main.tf
+  652  terraform apply
+  653  mv main.cf main.cf.old
+  654  ls
+  655  mv main.tf 
+  656  vi main2
+  657  mv main.tf main.tf.firts
+  658  mv main2 main.tf
+  659  terraform init
+  660  terraform apply
+  661  terraform show
+  662  vi main.tf.firts 
+  663  cd
+  664  mkdir -p ~/mycode/aws-tf/
+  665  cd ~/mycode/aws-tf/
+  666  ls
+  667  export AWS_ACCESS_KEY_ID=""
+  668  export AWS_SECRET_ACCESS_KEY=""
+  669  export AWS_DEFAULT_REGION="us-west-2"
+  670  vim main.tf
+  671  vi main.tf 
+  672  terraform fmt
+  673  terraform validate
+  674  vi main.tf 
+  675  echo ${AWS_DEFAULT_REGION}
+  676  vi main.tf 
+  677  terraform validate
+  678  terraform init
+  679  terraform validate
+  680  terraform fmt
+  681  echo ${AWS_DEFAULT_REGION}
+  682  vi main.tf 
+  683  terraform fmt
+  684  terraform apply
+  685  echo ${AWS_DEFAULT_REGION}
+  686  vi main.tf 
+  687  terraform apply
+  688  vi main.tf 
+  689  export AWS_DEFAULT_REGION="us-west-2"
+  690  vi main.t
+  691  terraform apply
+  692  terraform show
+  693  mkdir -p ~/mycode/aws-output-tf/
+  694  deliver_to_git "terraform and aws"
+  695  cd ~/mycode/aws-output-tf/
+  696  vim main.tf
+  697  vim ~/mycode/aws-output-tf/variables.tf
+  698  terraform init
+  699  terraform apply
+  700  ls
+  701  vim ~/mycode/aws-output-tf/outputs.tf
+  702  terraform apply
+  703  deliver_to_git "aws and output values"
+  704  4 aws-output-tf/main.tf
+  705  mkdir -p ~/mycode/aws-loops/
+  706  cd ~/mycode/aws-loops/
+  707  history | grep AWS
+  708  vim main.tf
+  709  vim variables.tf
+  710  vim outputs.tf
+  711  terraform init
+  712  terraform fmt
+  713  terraform validate
+  714  terraform apply
+  715  mv main.tf main.old
+  716  vim main.tf
+  717  terraform init
+  718  terraform apply
+  719  mv  main.old main.cf
+  720  terraform apply
+  721  ls 
+  722  vi main.tf
+  723  terraform destory
+  724  terraform destroy
+  725  mv main.cf main.cf.old
+  726  vim main.tf
+  727  mv main.tf main.cf.old
+  728  vim main.tf
+  729  terraform init 
+  730  terraform apply
+  731  deliver_to_git "looping with aws"
+  732  cd 
+  733  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  734  sudo apt install unzip -y
+  735  unzip awscliv2.zip
+  736  du -sh aws
+  737  sudo ./aws/install
+  738  aws configure
+  739  history | grep AWS
+  740  aws configure
+  741  mkdir -p ~/mycode/aws-drift-tf/
+  742  cd ~/mycode/aws-drift-tf/
+  743  vim main.tf
+  744  vim outputs.tf
+  745  vim variables.tf
+  746  vim terraform.tfvars
+  747  ssh-keygen -t rsa -C "granthmckean@gmail.com" -f ~/.ssh/key
+  748  terraform init
+  749  terraform apply
+  750  terraform state list
+  751  echo $SG_ID
+  752  aws ec2 authorize-security-group-ingress --group-name "sg_web" --protocol tcp --port 8080 --cidr 0.0.0.0/0
+  753  aws ec2 modify-instance-attribute --instance-id $(terraform output -raw instance_id) --groups $SG_ID
+  754  terraform plan -refresh-only
+  755  terraform apply -refresh-only
+  756  terraform apply 
+  757  terraform show
+  758  ssh -i ~/.ssh/key ubuntu@$(terraform output -raw public_ip)
+  759  deliver_to_git "terraform and aws drift"
+  760  cd ..
+  761  ls
+  762  cat history.day2.txt
+  763  mkdir -p ~/mycode/aws-challenge/
+  764  cd ~/mycode/aws-challenge/
+  765  vim main.tf
+  766  vim variables.tf
+  767  terraform init
+  768  terraform validate
+  769  vi main.tf 
+  770  terraform apply -var "ami=ami-08d70e59c07c61a3a"
+  771  cd ../
+  772  ls 
+  773  ls -ltr
+  774  cd aws-drift-tf/
+  775  ls
+  776  vi main.tf 
+  777  cat ~/bin/deliver_to_git 
+  778  deliver_to_git "terraform and aws drift"
+  779  mkdir -p ~/mycode/tfcloud
+  780  cd ~/mycode/tfcloud
+  781  terraform login
+  782  vi cloud.tf
+  783  terraform init
+  784  terraform apply
+  785  vim main.tf
+  786  terraform init
+  787  terraform apply
+  788  deliver_to_git /* Alta3 Research - rzfeeser@alta3.com
+  789  /* a list of local variables */
+  790  locals {
+  791  }
+  792  /* The null_resource */
+  793  resource "null_resource" "fellowship" {
+  794  history | grep deliver
+  795  deliver_to_git "terraform cloud"
+  796  mkdir -p ~/mycode/ansible-tf/
+  797  cd ~/mycode/ansible-tf/
+  798  vi docker.create.sh
+  799  vi docker.cleanup.sh
+  800  vim main.tf
+  801  vim Dockerfile
+  802  terraform init
+  803  terraform apply
+  804  ssh student@10.10.2.3
+  805  mv main.tf main.tf.first
+  806  vi main.tf
+  807  terraform apply
+  808  ssh student@10.10.2.3
+  809  vim playbook-futurama.yml
+  810  vim hosts
+  811  sudo apt-get install sshpass -y
+  812  ansible-playbook playbook-futurama.yml -i hosts
+  813  python3 -m pip install ansible --user
+  814  ls
+  815  ansible-playbook playbook-futurama.yml -i hosts
+  816  ssh bender@10.10.2.3
+  817  ssh zoidberg@10.10.2.5
+  818  ssh fry@10.10.2.4
+  819  vi playbook-futurama.yml 
+  820  history|grep play
+  821  ansible-playbook playbook-futurama.yml -i hosts
+  822  ssh fry@10.10.2.4
+  823  docker ps
+  824  deliver_to_git "Terraform and Ansible"
+  825  terraform destroy
+  826  docker ps
+  827  cd
+  828  tar -xf google-cloud-cli-403.0.0-linux-x86_64.tar.gz
+  829  ls
+  830  pwd
+  831  ./google-cloud-sdk/install.sh
+  832  ./google-cloud-sdk/bin/gcloud auth application-default login
+  833  mkdir ~/mycode/googlecloud/
+  834  cd ~/mycode/googlecloud/
+  835  vim ~/mycode/googlecloud/main.tf
+  836  vi resources.tf
+  837  terraform show
+  838  cd ..
+  839  ls
+  840  cd aws-drift-tf/
+  841  ls
+  842  terraform show
+  843  ls
+  844  cd ..
+  845  ls
+  846  cd tfcloud
+  847  ls
+  848  terraform show
+  849  terraform destroy
+  850  terraform show
+  851  terraform destroy
+  852  │     terraform state push errored.tfstate
+  853  terraform state push errored.tfstate
+  854  ls
+  855  cd ..
+  856  ls 
+  857  cd googlecloud/
+  858  ls
+  859  vim ~/gkey
+  860  export GOOGLE_APPLICATION_CREDENTIALS="/home/student/gkey"
+  861  terraform init
+  862  deliver_to_git "terraform and GCP"
+  863  cd ..
+  864  ls
+  865  ls googlecloud/
+  866  cd googlecloud/
+  867  ls
+  868  history | grep des
+  869  terraform destroy
+  870  cd ..
+  871  ls
+  872  cd docker-tf
+  873  terraform destroy
+  874  cd ../docker-challenge/
+  875  ls
+  876  terraform show
+  877  terraform destroy
+  878  ls
+  879  cd ..
+  880  ls
+  881  cd azure-tf/
+  882  terraform show
+  883  terraform destroy
+  884  ls
+  885  cd ../aws-loops/
+  886  terraform show
+  887  ls
+  888  cd..
+  889  ls
+  890  cd ..
+  891  ls
+  892  history | grep deli
+  893  deliver_to_git "terraform and GCP"
+  894  bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+  895  exec -l $SHELL
+  896  oci --version
+  897  oci session authenticate
+  898  export TF_VAR_tenancy_ocid=<tenancy_OCID>
+  899  export TF_VAR_compartment_ocid=<compartment_OCID>
+  900  export TF_VAR_fingerprint=<key_fingerprint>
+  901  ssh-keygen -f ~/.ssh/id_rsa -e -m pem
+  902  mkdir -p ~/mycode/oracle-tf/
+  903  cd ~/mycode/oracle-tf/
+  904  vim main.tf
+  905  vim resource.tf
+  906  deliver_to_git "terraform and OCI"
+  907  exit
+  908  curl http://localhost:9876
+  909  curl http://localhost:9876/spock
+  910  curl http://localhost:9876/ping
+  911  cat ~/dockergo/Dockerfile
+  912  sudo docker build --tag dockergo .
+  913  cd mycode
+  914  history | grep deli
+  915  deliver_to_git "terraform and go-microservice"
+  916  ls
+  917  ls http-tf/
+  918  history > history.day3.txt 
