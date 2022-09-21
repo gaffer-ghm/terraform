@@ -28,8 +28,6 @@
    28  vi main.cf
    29  terraform init
    30  ls -l
-   31  pwd
-   32  ls
    33  mv main.cf main.tf
    34  terraform init
    35  terraform plan
@@ -47,7 +45,6 @@
    47  cd ..
    48  git status
    49  history 
-   50  history|grep git'
    51  history|grep git
    52  cd
    53  mv mycode/ mycode.old
